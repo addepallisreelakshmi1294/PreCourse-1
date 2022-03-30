@@ -13,25 +13,49 @@ class Stack {
     Stack() 
     { 
         //Initialize your constructor 
+        top = -1;
+        
     } 
   
     boolean push(int x) 
     { 
         //Check for stack Overflow
         //Write your code here
+        if (top + 1== a.length(){
+            return false;
+        }
+        else{
+            top = top + 1
+            if(a.length() > top)
+                a[top] == x;
+        }     
     } 
   
     int pop() 
     { 
         //If empty return 0 and print " Stack Underflow"
         //Write your code here
+        
+        if(top == -1){
+            System.out.println("stack underflow")
+                return 0;
+        }else{
+           return a[top];
+            top = top - 1;
+        }
     } 
   
     int peek() 
     { 
         //Write your code here
-    } 
-} 
+        if(a.length() > top){
+            return a[top];
+        }
+        else{
+            return -1;
+        }
+    }
+}
   
 // Driver code 
 class Main { 
